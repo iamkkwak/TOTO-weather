@@ -8,18 +8,18 @@ html, body {
     width: 100%;
 }
 
-div {
+.wrapper {
     width: 100%;
     height: 100%;
 }
 
-div.top {
+.wrapper .top {
     width: 100%;
     height: 8%;
     background-color: whitesmoke;
 }
 
-div.left {
+.wrapper .left {
     width: 80%;
     height: 92%;
     float: left;
@@ -27,10 +27,12 @@ div.left {
     background: lightseagreen;
 }
 
-div.right {
+.wrapper .right {
     width: 20%;
     height: 92%;
     float: right;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
     background: lightcoral;
 }
