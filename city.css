@@ -11,13 +11,13 @@ body
 {
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
-  background: #d22222;;
+  /* background: #d22222;; */
 }
 
 div.widget
 {
   position: relative;
-  width: 355px;
+  width: 98%;
   height: 100px;
   margin: 150px auto;
   background-color: #fcfdfd;
