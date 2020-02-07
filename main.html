@@ -103,7 +103,6 @@
 </body>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>
-<<<<<<< HEAD
     var map = new naver.maps.Map('map', {
         zoom: 10,
         center: new naver.maps.LatLng(37.3614483, 127.1114883)
@@ -115,7 +114,7 @@
     map.getPanes().floatPane.appendChild(menuLayer[0]);
 
 
-    naver.maps.Event.addListener(map, 'click', function(e) {
+    naver.maps.Event.addListener(map, 'click', function (e) {
         var marker = new naver.maps.Marker({
             position: e.coord,
             map: map
@@ -124,7 +123,7 @@
         markerList.push(marker);
     });
 
-    naver.maps.Event.addListener(map, 'keydown', function(e) {
+    naver.maps.Event.addListener(map, 'keydown', function (e) {
         var keyboardEvent = e.keyboardEvent,
             keyCode = keyboardEvent.keyCode || keyboardEvent.which;
 
@@ -133,7 +132,7 @@
         if (keyCode === ESC) {
             keyboardEvent.preventDefault();
 
-            for (var i=0, ii=markerList.length; i<ii; i++) {
+            for (var i = 0, ii = markerList.length; i < ii; i++) {
                 markerList[i].setMap(null);
             }
 
@@ -143,13 +142,13 @@
         }
     });
 
-    naver.maps.Event.addListener(map, 'mousedown', function(e) {
+    naver.maps.Event.addListener(map, 'mousedown', function (e) {
         menuLayer.hide();
     });
 
-    naver.maps.Event.addListener(map, 'rightclick', function(e) {
+    naver.maps.Event.addListener(map, 'rightclick', function (e) {
         var coordHtml =
-            'Coord: '+ e.coord +'(위/경도 좌표)' + '<br />' +
+            'Coord: ' + e.coord + '(위/경도 좌표)' + '<br />' +
             'Point: ' + e.point + '<br />' +
             'Offset: ' + e.offset;
 
@@ -160,12 +159,7 @@
 
         console.log('Coord: ' + e.coord.toString());
     });
-=======
-    var mapOptions = {
-        center: new naver.maps.LatLng(37.5013090, 127.0396885),
-        zoom: 16
-    };
->>>>>>> ed7b602f1c48389f55e2d73ed43bf418a3d31382
 
 </script>
+
 </html>
