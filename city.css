@@ -10,44 +10,15 @@
 {
   position: relative;
   width: 80%;
-  height: 100px;
-  margin: 150px auto;
-  background-color: #fcfdfd;
+  height: 90px;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 9px;
   padding: 20px;
-  box-shadow: 0px 31px 35px -26px #080c21;
+  box-shadow: 0px 30px 35px -26px #080c21;
   font-family: 'Roboto', sans-serif;
+  color: white;
   overflow: hidden;
-}
-
-.widget .left-panel
-{
-  position: relative;
-}
-
-.widget .date
-{
-  font-size: 12px;
-  font-weight: bold;
-  color: rgba(0,0,0,0.5);
-}
-
-.widget .city
-{
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-top: 5px;
-  color: rgba(0,0,0,0.7);
-}
-
-.widget .temp
-{
-  float: right;
-  font-size: 70px;
-  color: rgba(0,0,0,0.9);
-  font-weight: 100;
-  padding-left: 10px;
 }
 
 .widget .panel
@@ -55,9 +26,48 @@
   display: inline-block;
 }
 
+.widget .left-panel
+{
+  z-index: 2;
+}
+
+.widget .left-panel .city_eng
+{
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: -5px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.widget .left-panel .city_kor
+{
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
 .widget .right-panel
 {
-  position: relative;
+  position: absolute;
+  right: 20px;
   float: right;
-  padding: 20px 0px 0px 10px;
+  padding: 10px 0px 0px 10px;
+  z-index: 1;
+}
+
+.widget .right-panel .temp
+{
+  float: right;
+  font-size: 65px;
+  color: rgba(255, 255, 255);
+  font-weight: 100;
+  padding-left: 10px;
+}
+
+.widget .right-panel img.weather {
+  width: 50px;
+  position: relative;
+  top: 25px;
 }

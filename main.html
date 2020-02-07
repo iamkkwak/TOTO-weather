@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <title>간단한 지도 표시하기</title>
+    <title>TOTO weather</title>
     <script type="text/javascript"
         src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=acsdls1g18"></script>
     <link rel="stylesheet" href="main.css">
@@ -16,29 +16,95 @@
 
 <body>
     <div class="wrapper">
-        <div class="top"></div>
+        <div class="top">
+            <img src="https://i.postimg.cc/Dzx186C7/logo.png" height="100%" style="padding-left: 5px;">
+        </div>
         <div class="left" id="map">
         </div>
         <div class="right">
             <div class="widget">
                 <div class="left-panel panel">
-                    <div class="date">Monday, 20 Aug 2018</div>
-                    <div class="city">Seoul</div>
-                    <div class="temp"></div>
+                    <div class="city_eng">Seoul</div>
+                    <div class="city_kor">서울특별시</div>
                 </div>
                 <div class="right-panel panel">
-                    <img src="https://s5.postimg.cc/yzcm7htyb/image.png" alt="" width="55" style="position: relative; bottom: 0px;">
+                    <img src="https://s5.postimg.cc/yzcm7htyb/image.png" class="weather">
                     <div class="temp">27&deg;</div>
                 </div>
+            </div>
 
+            <div class="widget">
+                <div class="left-panel panel">
+                    <div class="city_eng">Busan</div>
+                    <div class="city_kor">부산광역시</div>
+                </div>
+                <div class="right-panel panel">
+                    <img src="https://s5.postimg.cc/yzcm7htyb/image.png" class="weather">
+                    <div class="temp">27&deg;</div>
+                </div>
+            </div>
+
+            <div class="widget">
+                <div class="left-panel panel">
+                    <div class="city_eng">Incheon</div>
+                    <div class="city_kor">인천광역시</div>
+                </div>
+                <div class="right-panel panel">
+                    <img src="https://s5.postimg.cc/yzcm7htyb/image.png" class="weather">
+                    <div class="temp">27&deg;</div>
+                </div>
+            </div>
+
+            <div class="widget">
+                <div class="left-panel panel">
+                    <div class="city_eng">Daegu</div>
+                    <div class="city_kor">대구광역시</div>
+                </div>
+                <div class="right-panel panel">
+                    <img src="https://s5.postimg.cc/yzcm7htyb/image.png" class="weather">
+                    <div class="temp">27&deg;</div>
+                </div>
+            </div>
+
+            <div class="widget">
+                <div class="left-panel panel">
+                    <div class="city_eng">Daejeon</div>
+                    <div class="city_kor">대전광역시</div>
+                </div>
+                <div class="right-panel panel">
+                    <img src="https://s5.postimg.cc/yzcm7htyb/image.png" class="weather">
+                    <div class="temp">27&deg;</div>
+                </div>
+            </div>
+
+            <div class="widget">
+                <div class="left-panel panel">
+                    <div class="city_eng">Gwangju</div>
+                    <div class="city_kor">광주광역시</div>
+                </div>
+                <div class="right-panel panel">
+                    <img src="https://s5.postimg.cc/yzcm7htyb/image.png" class="weather">
+                    <div class="temp">27&deg;</div>
+                </div>
+            </div>
+
+            <div class="widget">
+                <div class="left-panel panel">
+                    <div class="city_eng">Ulsan</div>
+                    <div class="city_kor">울산광역시</div>
+                </div>
+                <div class="right-panel panel">
+                    <img src="https://s5.postimg.cc/yzcm7htyb/image.png" class="weather">
+                    <div class="temp">27&deg;</div>
+                </div>
             </div>
         </div>
     </div>
 </body>
 <script>
     var mapOptions = {
-        center: new naver.maps.LatLng(37.3595704, 127.105399),
-        zoom: 10
+        center: new naver.maps.LatLng(37.5013090, 127.0396885),
+        zoom: 16
     };
 
     var map = new naver.maps.Map('map', mapOptions);

@@ -16,7 +16,8 @@ html, body {
 .wrapper .top {
     width: 100%;
     height: 8%;
-    background-color: whitesmoke;
+    background-color: black;
+    vertical-align: middle;
 }
 
 .wrapper .left {
@@ -33,6 +34,7 @@ html, body {
     float: right;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
-    background: lightcoral;
+    overflow: auto;
+    background-image: url("https://pgnqdrjultom1827145.cdn.ntruss.com/img/5f/33/5f33c50a26234491b31b459914f866a9a537c853972ee9bdaf0e6c674bdc7f05_v1.jpg");
+    background-position: center;
 }
