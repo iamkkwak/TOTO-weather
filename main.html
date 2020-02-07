@@ -9,15 +9,29 @@
     <title>TOTO weather</title>
     <script type="text/javascript"
         src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=acsdls1g18"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="map.css">
     <link rel="stylesheet" href="city.css">
 </head>
 
 <body>
+    <nav role='navigation' id="mainnav">
+        <ul>
+            <li><a href="#?">Home</a></li>
+            <li><a href="#?">About</a></li>
+            <li><a href="#?">Clients</a></li>
+            <li><a href="#?">Contact Us</a></li>
+        </ul>
+    </nav>
+    <canvas id="bubble"></canvas>
     <div class="wrapper">
         <div class="top">
-            <img src="https://i.postimg.cc/Dzx186C7/logo.png" height="100%" style="padding-left: 5px;">
+            <div class="hamb">
+                <a href="#"><i class="fa fa-bars"></i></a>
+            </div>
+            <img src="https://i.postimg.cc/Dzx186C7/logo.png" height="100%" style="position:relative; left: 50px; padding-left: 5px;">
         </div>
         <div class="left" id="map">
         </div>
@@ -101,9 +115,9 @@
         </div>
     </div>
 </body>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="menu.js"></script>
 <script>
-<<<<<<< HEAD
     var map = new naver.maps.Map('map', {
         zoom: 10,
         center: new naver.maps.LatLng(37.3614483, 127.1114883)
@@ -160,12 +174,6 @@
 
         console.log('Coord: ' + e.coord.toString());
     });
-=======
-    var mapOptions = {
-        center: new naver.maps.LatLng(37.5013090, 127.0396885),
-        zoom: 16
-    };
->>>>>>> ed7b602f1c48389f55e2d73ed43bf418a3d31382
 
 </script>
 </html>

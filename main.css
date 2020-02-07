@@ -38,3 +38,46 @@ html, body {
     background-image: url("https://pgnqdrjultom1827145.cdn.ntruss.com/img/5f/33/5f33c50a26234491b31b459914f866a9a537c853972ee9bdaf0e6c674bdc7f05_v1.jpg");
     background-position: center;
 }
+
+/* 사이드 메뉴 */
+
+#mainnav {
+    position: absolute; 
+    font-family: 'Montserrat Alternates', sans-serif;
+    z-index: 1;
+}
+#mainnav li {
+    margin: 85px 0;
+    left: -550px;
+    position: relative;
+    display: none;
+}
+#mainnav a {
+    color: #fff;
+    text-shadow: 2px 2px 0 #000;
+    text-decoration: none;
+    font-size: 3.5em;
+}
+
+.hamb {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2.5em;
+    z-index: 1;
+
+}
+.hamb a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#bubble {
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    position: fixed;
+    display: none;
+    z-index: 1;
+    background: rgba(0, 0, 0, .5);
+  }
