@@ -77,24 +77,24 @@
      <!-- main.html -->
      
      <div class="wrapper">
-     	<div class="top">
-             <img src="logo.png">
-         </div>
-     	<div class="left" id="map">
-             지도가 들어갈 곳
-         </div>
-     	<div class="right">
-     		<div class="widget">
-     			<div class="left-panel panel">
-     				<div class="city_eng">City</div>
-     				<div class="city_kor">도시 이름</div>
-     			</div>
-     			<div class="right-panel panel">
-     				<img src="image.png" class="weather">
-     				<div class="temp">00&deg;</div>
-     			</div>
-     		</div>
-     	</div>
+        <div class="top">
+            <img src="logo.png">
+        </div>
+        <div class="left" id="map">
+            지도가 들어갈 곳
+        </div>
+        <div class="right">
+            <div class="widget">
+                <div class="left-panel panel">
+                    <div class="city_eng">City</div>
+                    <div class="city_kor">도시 이름</div>
+                </div>
+                <div class="right-panel panel">
+                    <img src="image.png" class="weather">
+                    <div class="temp">00&deg;</div>
+                </div>
+            </div>
+        </div>
      </div>
      ```
 
