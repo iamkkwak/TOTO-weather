@@ -54,7 +54,76 @@
      ```
 
      그럼 이제 git 로그인 창이 뜰 텐데, 그 때 로그인을 해주면 연동 완료!
-     
-     
 
-2. 레이아웃 구성하기
+<br>
+
+2. 전체적인 기능 구상하기
+
+   > (1) 메인 화면은 지도와 *~~사용자가 추가할 수 있는~~*(아직 미정) 도시 위젯으로 구성된다.
+   >
+   > (2) 도시는 검색으로 추가할 수 있으며, 각 도시를 클릭하면 지도의 위치가 변경된다.
+   >
+   > (3) 지도에는 현재 보이는 지역의 날씨가 간단하게 아이콘으로 보인다.
+   >
+   > (4) Todo를 위한 달력이 별도 메뉴로 있다. 해당 날짜를 클릭해서 Todo를 등록할 수 있으며, 해당 내용은 DB에 저장이 된다. *~~월간 달력에는 "완료한 Todo / 저장한 Todo"가 간단하게 보이도록 한다.~~*(아직 미정)
+
+<br>
+
+3. 메인화면 레이아웃 구성하기
+
+   - 위쪽은 로고, 왼쪽은 지도, 오른쪽은 추가할 수 있는 위젯으로 구성했다.
+
+     ```html
+     <!-- main.html -->
+     
+     <div class="wrapper">
+     	<div class="top">
+             <img src="logo.png">
+         </div>
+     	<div class="left" id="map">
+             지도가 들어갈 곳
+         </div>
+     	<div class="right">
+     		<div class="widget">
+     			<div class="left-panel panel">
+     				<div class="city_eng">City</div>
+     				<div class="city_kor">도시 이름</div>
+     			</div>
+     			<div class="right-panel panel">
+     				<img src="image.png" class="weather">
+     				<div class="temp">00&deg;</div>
+     			</div>
+     		</div>
+     	</div>
+     </div>
+     ```
+
+   - 아래 css는 화면을 margin없이 꽉 채울 수 있는 코드이다. 다음에 참고해야겠다. :clap:
+
+     ```css
+     /* main.css */
+     
+     * {
+         margin: 0px;
+         padding: 0px;
+     }
+     
+     html, body {
+         height: 100%;
+         width: 100%;
+     }
+     
+     .wrapper {
+         width: 100%;
+         height: 100%;
+     }
+     ```
+
+
+
+   - 완성된 레이아웃 및 디자인
+
+     <img src = "Resources/20200207.png" height="500px">
+
+   
+
