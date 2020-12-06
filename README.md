@@ -1,6 +1,4 @@
 # WEB PROJECT
-
-- **Who?** SSAFY 3기 임베디드 16반 곽은정 & 이현민
 - **When?** 2020.02.07 ~
 - **What?** 날씨 및 달력 등을 포함한 웹 페이지 제작하기
 - **How?** HTML, CSS, JavaScript, Vue.js, MongoDB 등을 이용
